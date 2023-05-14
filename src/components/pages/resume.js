@@ -1,17 +1,29 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircle } from '@fortawesome/free-regular-svg-icons';
 
 export default function Resume() {
   return (
-    <div>
-      <h1>resume</h1>
-      <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
-      </p>
-    </div>
+    <container className="page-container">
+      <div className="about-terminal">
+        <div className="terminal-bar">
+          <FontAwesomeIcon icon={faCircle} id="terminal-red"/>
+          <FontAwesomeIcon icon={faCircle} id="terminal-yellow"/>
+          <FontAwesomeIcon icon={faCircle} id="terminal-green"/>
+        </div>
+        <div className="terminal-screen">
+
+        </div>
+        
+      </div>
+      <div className="skills-terminal">
+        <div className="terminal-bar">
+
+        </div>
+        <div className="terminal-screen">
+
+        </div>
+      </div>
+    </container>
   );
 }

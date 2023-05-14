@@ -1,24 +1,115 @@
 import React from 'react';
+import vetSetGo from '../images/vet-set-go-homepage.png';
+import weatherApp from '../images/weather-demo.png';
+import codingQuiz from '../images/coding-quiz.png';
+import totallyReal from '../images/totally-real-business.png';
+import developersDen from '../images/the-developers-den.png';
+import workdayScheduler from '../images/workday-scheduler.png';
+import employeeTracker from '../images/employee-tracker.jpg';
+import ecommerceBackend from '../images/ecommerce-backend.jpg';
+import '../../styles/style.css'
+
+
 
 export default function Portfolio() {
   return (
-    <div>
-      <h1>portfolio</h1>
-      <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-        Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-        dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-        sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-        sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-        vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-        libero. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-        lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-        in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-        bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-        est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
+    <div className="page-container">
+      <h1 className="page-title">Check out some of my works below:</h1>
+      <container className="portfolio-box">
+        {/* Vet Set Go */}
+        <div className="app-box">
+          <img className="app-pic" src={vetSetGo} alt="Vet Set Go application screenshot"/>
+          <div className="app-text">
+            <h4 className="app-title">Vet Set Go</h4>
+            <div className="app-links">
+              <a href="https://vet-set-go.herokuapp.com/">Deployed Application</a>
+              <a href="https://github.com/Project2Group1/vet-set-go">Github Repository</a>
+            </div>
+          </div>
+        </div>
+
+        {/* Weather Dashboard */}
+        <div className="app-box">
+          <img className="app-pic" src={weatherApp} alt="Weather Dashboard application screenshot"/>
+          <div className="app-text">
+            <h4 className="app-title">Weather Dashboard</h4>
+            <div className="app-links">
+              <a href="https://phoenixouyang.github.io/weather-dashboard/">Deployed Application</a>
+              <a href="https://github.com/phoenixouyang/weather-dashboard">Github Repository</a>
+            </div>
+          </div>
+        </div>
+
+        {/* Developers Den */}
+        <div className="app-box">
+          <img className="app-pic" src={developersDen} alt="The Developers Den application screenshot"/>
+          <div className="app-text">
+            <h4 className="app-title">The Developer's Den</h4>
+            <div className="app-links">
+              <a href="https://salty-wave-32472.herokuapp.com/">Deployed Application</a>
+              <a href="https://github.com/phoenixouyang/tech-blog-TheDevDen">Github Repository</a>
+            </div>
+          </div>
+        </div>
+
+        {/* Totally Real Business */}
+        <div className="app-box">
+          <img className="app-pic" src={totallyReal} alt="Totally Real application screenshot"/>
+          <div className="app-text">
+            <h4 className="app-title">Totally Real Business Page</h4>
+            <div className="app-links">
+              <a href="https://phoenixouyang.github.io/odin-tr-business/">Deployed Application</a>
+              <a href="https://github.com/phoenixouyang/odin-tr-business">Github Repository</a>
+            </div>
+          </div>
+        </div>
+
+        {/* Coding Quiz */}
+        <div className="app-box">
+          <img className="app-pic" src={codingQuiz} alt="Coding Quiz application screenshot"/>
+          <div className="app-text">
+            <h4 className="app-title">Coding Quiz</h4>
+            <div className="app-links">
+              <a href="https://phoenixouyang.github.io/code-quiz/">Deployed Application</a>
+              <a href="https://github.com/phoenixouyang/code-quiz">Github Repository</a>
+            </div>
+          </div>
+        </div>
+
+        {/* Workday Scheduler */}
+        <div className="app-box">
+          <img className="app-pic" src={workdayScheduler} alt="Workday Scheduler application screenshot"/>
+          <div className="app-text">
+            <h4 className="app-title">Workday Scheduler</h4>
+            <div className="app-links">
+              <a href="https://phoenixouyang.github.io/work-day-scheduler/">Deployed Application</a>
+              <a href="https://github.com/phoenixouyang/work-day-scheduler">Github Repository</a>
+            </div>
+          </div>
+        </div>
+
+        {/* Employee Tracker */}
+        <div className="app-box">
+          <img className="app-pic" src={employeeTracker} alt="Employee Tracker application screenshot"/>
+          <div className="app-text">
+            <h4 className="app-title">Employee Tracker</h4>
+            <div className="app-links">
+              <a href="https://github.com/phoenixouyang/employee-tracker">Github Repository</a>
+            </div>
+          </div>
+        </div>        
+
+        {/* E-Commerce Backend */}
+        <div className="app-box">
+          <img className="app-pic" src={ecommerceBackend} alt="E-Commerce Backend application screenshot"/>
+          <div className="app-text">
+            <h4 className="app-title">E-Commerce Back End</h4>
+            <div className="app-links">
+              <a href="https://github.com/phoenixouyang/ecommerce-back-end">Github Repository</a>
+            </div>
+          </div>
+        </div>    
+      </container>
     </div>
   );
 }
