@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400&display=swap');
 
 * {
     font-family: 'Raleway', sans-serif;
 }
 
 .page-container {
-    background-image: linear-gradient(180deg, #D8CEDA 40%, #f7f6f3 40%);
+    background-image: linear-gradient(175deg, #D8CEDA 40%, #f7f6f3 40%);
 }
 
 .about-box {
@@ -86,23 +87,25 @@
 .terminal {
     display: block;
     justify-content: center;
-    padding: 10px;
+    padding: 40px 10px 30px 10px;
 }
 
 .terminal-bar {
     background-color: #8c8c8c;
-    width: 50%;
-    padding: 10px;
+    width: 60%;
+    padding: 7px 10px;
     margin: auto;
     border-radius: 10px 10px 0px 0px;
 }
 
 .terminal-screen {
     background-color: #26242f;
-    width: 50%;
-    height: 100px;
+    width: 60%;
+    height: auto;
     margin: auto;
     border-radius: 0px 0px 10px 10px;
+    font-family: 'Source Code Pro', monospace;
+    padding: 50px;
 }
 
 #terminal-red {
@@ -118,4 +121,30 @@
 #terminal-green {
     color: #2ac840;
     padding: 0px 4px;
+}
+
+.text-left {
+    color: #f47ec9;
+    font-size: 21px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.text-right {
+    color: white;
+    font-size: 21px;
+    font-family: 'Source Code Pro', monospace;
+    padding-left: 5px;
+}
+
+.text-ul {
+    padding: 0;
+    columns: 2;
+}
+
+.text-list {
+    color: white;
+    font-size: 21px;
+    font-family: 'Source Code Pro', monospace;
+    list-style-type: none;
+    padding-left: 0px;
 }
