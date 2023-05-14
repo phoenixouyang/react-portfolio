@@ -82,3 +82,40 @@
     object-fit: cover;
     border-radius: 10px;
 }
+
+.terminal {
+    display: block;
+    justify-content: center;
+    padding: 10px;
+}
+
+.terminal-bar {
+    background-color: #8c8c8c;
+    width: 50%;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.terminal-screen {
+    background-color: #26242f;
+    width: 50%;
+    height: 100px;
+    margin: auto;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#terminal-red {
+    color: #ff5f57;
+    padding: 0px 4px;
+}
+
+#terminal-yellow {
+    color: #febc2e;
+    padding: 0px 4px;
+}
+
+#terminal-green {
+    color: #2ac840;
+    padding: 0px 4px;
+}
