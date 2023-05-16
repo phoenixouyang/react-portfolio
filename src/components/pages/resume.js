@@ -5,6 +5,8 @@ import '../../styles/style.css'
 import poResume from '../files/po-resume.pdf'
 
 export default function Resume() {
+
+  
   useEffect(() => {
     const handleDownload = () => {
       const resumeTy = document.getElementById('resume-thank-you');
