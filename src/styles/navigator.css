@@ -1,33 +1,25 @@
-.header-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.phoenix-logo {
-    width: 50px;
-    margin: 0px 5px 5px 0px;
-}
-
-.header-name {
-    font-size: 40px;
-}
-
 .nav {
     display: flex;
     justify-content: center;
-    border: none;
+    border: none !important;;
 }
 
 .nav-item {
-    background-color: white;
+    background-color: #272727;
     margin: 5px;
 }
 
-.nav-item:hover {
-    border: 1px solid white;
+#nav-text {
+    color: white;
+    font-size: 20px;
 }
 
-#nav-text {
-    color: black;
-    font-size: 20px;
+#nav-text:visited {
+    background-color: #272727;
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+    }
 }

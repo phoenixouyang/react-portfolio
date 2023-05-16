@@ -4,7 +4,8 @@ import AboutMe from './pages/about-me';
 import Resume from './pages/resume';
 import Portfolio from './pages/portfolio';
 import Contact from './pages/contact';
-import Footer from './footer'
+import Footer from './footer';
+import Header from './header'
 
 
 export default function PortfolioContainer() {
@@ -28,7 +29,9 @@ export default function PortfolioContainer() {
 
   return (
     <div>
-      <Navigator currentPage={currentPage} handlePageChange={handlePageChange} />
+      <Header>
+        <Navigator currentPage={currentPage} handlePageChange={handlePageChange} />
+      </Header>
         {renderPage()}
       <Footer />
     </div>
