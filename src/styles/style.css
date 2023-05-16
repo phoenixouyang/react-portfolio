@@ -84,6 +84,24 @@
     border-radius: 10px;
 }
 
+#resume-icon {
+    font-size: 25px;
+    padding-left: 10px;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    text-decoration: none;
+}
+
+#resume-icon:hover {
+    color: #f47ec9;
+}
+
+#resume-thank-you {
+    color: white;
+    padding: 10px 10px 0px 10px;
+    font-family: 'Source Code Pro', monospace;
+}
+
 .terminal {
     display: block;
     justify-content: center;

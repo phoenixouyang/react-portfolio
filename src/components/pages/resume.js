@@ -1,11 +1,38 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircle } from '@fortawesome/free-solid-svg-icons';
+import { faCircle, faFileArrowDown } from '@fortawesome/free-solid-svg-icons';
 import '../../styles/style.css'
+import poResume from '../files/po-resume.pdf'
 
 export default function Resume() {
+  useEffect(() => {
+    const handleDownload = () => {
+      const resumeTy = document.getElementById('resume-thank-you');
+      resumeTy.textContent = "Thank you for downloading my resume!"
+    };
+
+    const resumeLink = document.getElementById('resume-icon');
+    resumeLink.addEventListener('click', handleDownload);
+
+    return () => {
+      resumeLink.removeEventListener('click', handleDownload);
+    };
+  }, []);
+
   return (
     <div className="page-container">
+      <div className="download-resume terminal">
+        <div className="terminal-bar">
+          <FontAwesomeIcon icon={faCircle} id="terminal-red"/>
+          <FontAwesomeIcon icon={faCircle} id="terminal-yellow"/>
+          <FontAwesomeIcon icon={faCircle} id="terminal-green"/>
+        </div>
+        <div className="terminal-screen">
+          <a href={poResume} download="phoenix-ouyang-resume" id="resume-icon"><FontAwesomeIcon icon={faFileArrowDown} id=""/> Download my Resume</a>
+          <p id="resume-thank-you"></p>
+        </div>
+        
+      </div>
       <div className="about-terminal terminal">
         <div className="terminal-bar">
           <FontAwesomeIcon icon={faCircle} id="terminal-red"/>
