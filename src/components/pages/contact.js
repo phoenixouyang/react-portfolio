@@ -7,8 +7,9 @@ export default function Contact() {
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleInputChange = (e) => {
     const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
@@ -25,10 +26,6 @@ export default function Contact() {
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    if (!validateEmail(email)) {
-      setErrorMessage('Please enter a valid email');
-      return;
-    }
     if (!name) {
       setErrorMessage('Please enter a name');
       return;
@@ -37,18 +34,17 @@ export default function Contact() {
       setErrorMessage('Please enter a message');
       return;
     }
+    if (!validateEmail(email)) {
+      setErrorMessage('Please enter a valid email address');
+      return;
+    }
 
     setEmail('');
     setName('');
     setMessage('');
-
-    const submitBtn = document.getElementById('submit-btn');
-    submitBtn.onsubmit({
-
-    })
-
-
-  }
+    setErrorMessage('');
+    setSuccessMessage('Your form has been submitted sucessfully!')
+  };
 
   return (
     <div>
@@ -56,18 +52,28 @@ export default function Contact() {
       <form className="contact-form">
         <div className="input name-input">
           <label for="name">Name:</label>
-          <input type="name" id="name" name="name"></input>
+          <input value={name} type="text" id="name" name="name" onChange={handleInputChange}></input>
         </div>
         <div className="input email-input">
           <label for="email">Email Address:</label>
-          <input type="email" id="email" name="email"></input>
+          <input value={email} type="email" id="email" name="email" onChange={handleInputChange}></input>
         </div>
         <div className="input message-input">
           <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="30" cols="50"></textarea>
+          <textarea value={message} id="message" name="message" rows="10" cols="50" onChange={handleInputChange}></textarea>
         </div>
-        <button type="submit" id="submit-btn">Submit</button>
+        <button type="button" id="submit-btn" onClick={handleFormSubmit}>Submit</button>
       </form>
+      {errorMessage && (
+        <div>
+          <p className="error-message">{errorMessage}</p>
+        </div>
+      )}
+      {successMessage && (
+        <div>
+          <p className="success-message">{successMessage}</p>
+        </div>
+      )}
     </div>
   );
 }
