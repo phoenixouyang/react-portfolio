@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+.contact-title {
+    text-align: center;
+}
+
+.contact-form {
+    width: 550px;
+    margin: auto;
+    background-color: rgb(245, 245, 245, 0.8);
+    text-align: center;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.name-email {
+    columns: 2;
+    justify-content: center;
+}
+
+.input input {
+    padding-left: 10px;
+    border: none;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.input textarea {
+    padding: 10px;
+    border: none;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.form-field {
+    width: 100%;
+}
+
+#message {
+    width: 100%
+}
+
+.input {
+    padding: 10px 0px;
+}
+
+.error-message {
+    color: red;
+}
+
+.success-message {
+    color: green
+} 
+
+@media screen and (max-width: 768px) {
+    .contact-form {
+      width: 80%;
+    }
+
+  }
+  

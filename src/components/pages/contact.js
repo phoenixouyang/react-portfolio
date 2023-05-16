@@ -1,19 +1,23 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../utils/helpers';
+import "../../styles/contact.css"
 
 export default function Contact() {
 
-  const [email, setEmail] = useState('');
+  // create state variables, and set their values to empty strings
+  const [email, setEmail] = useState('Email address');
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
 
   const handleInputChange = (e) => {
+    // get value of input that was changed
     const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
 
+    // set state of email, name or message
     if (inputType === 'email') {
       setEmail(inputValue);
     } else if (inputType === 'name') {
@@ -26,6 +30,10 @@ export default function Contact() {
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
+    // Clear success message if user is submitting mutiple forms
+    setSuccessMessage('');
+
+    // validation for empty fields and valid email, and output error messages
     if (!name) {
       setErrorMessage('Please enter a name');
       return;
@@ -39,6 +47,7 @@ export default function Contact() {
       return;
     }
 
+    // set input back to blank once form is sucessfully submitted, and output success message
     setEmail('');
     setName('');
     setMessage('');
@@ -47,20 +56,19 @@ export default function Contact() {
   };
 
   return (
-    <div>
-      <h1>Contact Me</h1>
+    <div className="page-container">
+      <h1 className="contact-title">Contact Me</h1>
       <form className="contact-form">
-        <div className="input name-input">
-          <label for="name">Name:</label>
-          <input value={name} type="text" id="name" name="name" onChange={handleInputChange}></input>
-        </div>
-        <div className="input email-input">
-          <label for="email">Email Address:</label>
-          <input value={email} type="email" id="email" name="email" onChange={handleInputChange}></input>
-        </div>
+        <div className="name-email">
+          <div className="input name-input">
+            <input value={name} type="text" id="name" name="name" onChange={handleInputChange} placeholder="Name" className="form-field"></input>
+          </div>
+          <div className="input email-input">
+            <input value={email} type="email" id="email" name="email" onChange={handleInputChange} placeholder="Email Address" className="form-field"></input>
+          </div>
+          </div>
         <div className="input message-input">
-          <label for="message">Message:</label>
-          <textarea value={message} id="message" name="message" rows="10" cols="50" onChange={handleInputChange}></textarea>
+          <textarea value={message} id="message" name="message" rows="5" cols="50" onChange={handleInputChange} placeholder="Message"></textarea>
         </div>
         <button type="button" id="submit-btn" onClick={handleFormSubmit}>Submit</button>
       </form>
