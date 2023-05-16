@@ -4,8 +4,14 @@
     font-family: 'Raleway', sans-serif;
 }
 
+.page-container {
+    padding: 20px;
+}
+
 .contact-title {
     text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
 }
 
 .contact-form {
@@ -15,6 +21,7 @@
     text-align: center;
     padding: 20px;
     border-radius: 6px;
+    border: 1px solid rgba(120, 120, 120, 0.2);
 }
 
 .name-email {
@@ -29,11 +36,23 @@
     border-radius: 6px;
 }
 
+.input input:focus {
+    outline: none;
+    border: 1.5px solid #9C61A8;
+    box-shadow: 0 0 10px #DEC8E3;
+}
+
 .input textarea {
     padding: 10px;
     border: none;
     background-color: white;
     border-radius: 6px;
+}
+
+.input textarea:focus {
+    outline: none;
+    border: 1.5px solid #9C61A8;
+    box-shadow: 0 0 10px #DEC8E3;
 }
 
 .form-field {
@@ -48,12 +67,28 @@
     padding: 10px 0px;
 }
 
+#submit-btn {
+    border: none;
+    background-color: #D8CEDA;
+    font-weight: 800;
+    font-size: 20px;
+    border-radius: 6px;
+    color: #272727;
+}
+
+#submit-btn:hover {
+    background-color: #948597;
+    color: white;
+}
+
 .error-message {
     color: red;
+    text-align: center;
 }
 
 .success-message {
-    color: green
+    color: green;
+    text-align: center;
 } 
 
 @media screen and (max-width: 768px) {

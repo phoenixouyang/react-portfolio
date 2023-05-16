@@ -5,7 +5,7 @@ import "../../styles/contact.css"
 export default function Contact() {
 
   // create state variables, and set their values to empty strings
-  const [email, setEmail] = useState('Email address');
+  const [email, setEmail] = useState('');
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
