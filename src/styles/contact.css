@@ -15,7 +15,8 @@
 }
 
 .contact-form {
-    width: 550px;
+    width: 60%;
+    max-width: 800px;
     margin: auto;
     background-color: rgb(245, 245, 245, 0.8);
     text-align: center;
