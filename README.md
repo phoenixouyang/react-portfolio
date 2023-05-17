@@ -16,7 +16,7 @@ Please note that not all sections of this portfolio are complete. I will continu
 N/A
 
 ## Usage
-You can access the deployed portfolio [here!](https://salty-wave-32472.herokuapp.com/)
+You can access the deployed portfolio [here!](https://phoenixouyangportfolio.herokuapp.com/)
 
 The website includes five sections:
 1. About Me: Quick Overview of who I am
