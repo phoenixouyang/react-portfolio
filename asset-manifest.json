@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.503e48f0.css",
+    "main.js": "/static/js/main.b39a6206.js",
+    "static/media/employee-tracker.jpg": "/static/media/employee-tracker.c2a75b31a8ff0181d4e3.jpg",
+    "static/media/ecommerce-backend.jpg": "/static/media/ecommerce-backend.482f33f2615ecba89f77.jpg",
+    "static/media/frank-mckenna-eXHeq48Z-Q4-unsplash.jpg": "/static/media/frank-mckenna-eXHeq48Z-Q4-unsplash.415d7f097ede9b3d862b.jpg",
+    "static/media/weather-demo.png": "/static/media/weather-demo.4da1b2cc1e15f0a8f9d0.png",
+    "static/media/profile-pic.jpeg": "/static/media/profile-pic.8e0f40e13f756fa1c324.jpeg",
+    "static/media/vet-set-go-homepage.png": "/static/media/vet-set-go-homepage.2b3939536731afd9b207.png",
+    "static/media/coding-quiz.png": "/static/media/coding-quiz.a9fe2bc815ea6ff192bc.png",
+    "static/media/the-developers-den.png": "/static/media/the-developers-den.f05e5cb5fbc99c5f155f.png",
+    "static/media/workday-scheduler.png": "/static/media/workday-scheduler.de0230911660c5783c97.png",
+    "static/media/totally-real-business.png": "/static/media/totally-real-business.54151257a9fb7388f931.png",
+    "static/media/po-resume.pdf": "/static/media/po-resume.8e0f68b73539ea67cb97.pdf",
+    "index.html": "/index.html",
+    "main.503e48f0.css.map": "/static/css/main.503e48f0.css.map",
+    "main.b39a6206.js.map": "/static/js/main.b39a6206.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.503e48f0.css",
+    "static/js/main.b39a6206.js"
+  ]
+}
