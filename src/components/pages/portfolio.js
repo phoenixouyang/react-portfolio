@@ -7,6 +7,7 @@ import developersDen from '../images/the-developers-den.png';
 import workdayScheduler from '../images/workday-scheduler.png';
 import employeeTracker from '../images/employee-tracker.jpg';
 import ecommerceBackend from '../images/ecommerce-backend.jpg';
+import blub from '../images/blub.png';
 import '../../styles/style.css'
 
 
@@ -16,6 +17,18 @@ export default function Portfolio() {
     <div className="page-container">
       <h1 className="page-title">Check out some of my works below:</h1>
       <container className="portfolio-box">
+        {/* Blub - a Chat Application */}
+        <div className="app-box">
+          <img className="app-pic" src={blub} alt="Blub chat application screenshot"/>
+          <div className="app-text">
+            <h4 className="app-title">Blub - A Chat Application</h4>
+            <div className="app-links">
+              <a href="https://blub.herokuapp.com/">Deployed Application</a>
+              <a href="https://github.com/UTOR-Group-6/messaging-app">Github Repository</a>
+            </div>
+          </div>
+        </div>
+
         {/* Vet Set Go */}
         <div className="app-box">
           <img className="app-pic" src={vetSetGo} alt="Vet Set Go application screenshot"/>
